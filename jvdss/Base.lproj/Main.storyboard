@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="jvdss" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4hI-fk-mh3">
+                                <rect key="frame" x="159" y="239" width="2" height="2"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="4Nd-ac-DrR"/>
+                                    <constraint firstAttribute="width" constant="2" id="xgx-Aa-i2u"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo544-300x99.png" translatesAutoresizingMaskIntoConstraints="NO" id="tVB-CT-7FT">
+                                <rect key="frame" x="85" y="165" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="01f-xT-hhL"/>
+                                    <constraint firstAttribute="width" constant="150" id="SKF-dQ-xk8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tVB-CT-7FT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eQ9-WF-kdu"/>
+                            <constraint firstItem="tVB-CT-7FT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iOe-H4-UZu"/>
+                            <constraint firstItem="4hI-fk-mh3" firstAttribute="centerX" secondItem="tVB-CT-7FT" secondAttribute="centerX" id="l29-gW-thO"/>
+                            <constraint firstItem="4hI-fk-mh3" firstAttribute="centerY" secondItem="tVB-CT-7FT" secondAttribute="centerY" id="rni-G0-bKU"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="pulseVie" destination="4hI-fk-mh3" id="5en-AL-Zc3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="298"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo544-300x99.png" width="300" height="99"/>
+    </resources>
+</document>
